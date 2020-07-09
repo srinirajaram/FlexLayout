@@ -1,0 +1,50 @@
+/* On screens that are 992px wide or less, go from four columns to two columns */
+
+@media screen and (max-width: 992px) {
+    .flexContainer .item {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .flexContainer .item {
+        width: 98%;
+        margin: 1%;
+    }
+}
+
+.flexContainer {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    /* height: 500px; */
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.flexContainer .item {
+    width: 23%;
+    padding: 10px;
+    margin: 1%;
+    background: white;
+    min-height: 300px;
+}
+
+.content {
+    max-width: 100% !important;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* Create four equal columns that floats next to each other */
